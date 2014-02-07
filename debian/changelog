@@ -1,3 +1,155 @@
+debianutils (4.3.2) unstable; urgency=low
+
+  * Fix list of utilities in long description.  closes: #666077.
+  * run-parts(8): clarify that run-parts execution order is not
+    locale-dependent.  closes: #654340.
+  * tempfile(1): note that tempfile cannot create directories.
+    closes: #457974.
+
+ -- Clint Adams <clint@debian.org>  Wed, 27 Jun 2012 21:44:53 -0400
+
+debianutils (4.3.1) unstable; urgency=low
+
+  * Updated Spanish man page translation from Omar Campagne.  closes: #673631.
+
+ -- Clint Adams <clint@debian.org>  Thu, 31 May 2012 20:56:30 -0400
+
+debianutils (4.3) unstable; urgency=low
+
+  * Patch from Wookey to set Multi-Arch: foreign.  closes: #665964.
+  * Patch from Wookey to fix stripping on cross-builds.  closes: #665988.
+
+ -- Clint Adams <clint@debian.org>  Tue, 27 Mar 2012 15:29:33 -0400
+
+debianutils (4.2.2) unstable; urgency=low
+
+  [ Michal Čihař ]
+  * Properly handle situation inside vserver.  closes: #665352.
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 3.9.3.
+
+ -- Clint Adams <clint@debian.org>  Sat, 24 Mar 2012 10:51:35 -0400
+
+debianutils (4.2.1) unstable; urgency=low
+
+  * Patch from Daniel Richman to unblock SIGCHLD before spawning.
+    closes: #657947.
+
+ -- Clint Adams <clint@debian.org>  Mon, 30 Jan 2012 23:29:02 -0500
+
+debianutils (4.2) unstable; urgency=low
+
+  * run-parts.c: Apply patch from Daniel Richman to better handle
+   dead child processes.  closes: #379645.
+
+ -- Clint Adams <clint@debian.org>  Sat, 28 Jan 2012 15:47:18 -0500
+
+debianutils (4.1) unstable; urgency=low
+
+  [ Clint Adams ]
+  * Add build-arch and build-indep targets.
+  * Use dpkg-buildflags.
+
+  [ Daniel Kahn Gillmor ]
+  * ischroot now "detects" a chroot under fakechroot (Closes: #650141)
+
+ -- Clint Adams <clint@debian.org>  Thu, 01 Dec 2011 20:52:56 -0500
+
+debianutils (4.0.4) unstable; urgency=low
+
+  * Remove csh from shells list.  closes: #644778.
+  * Remove ksh from shells list.  closes: #644779.
+
+ -- Clint Adams <clint@debian.org>  Sat, 08 Oct 2011 20:50:31 -0400
+
+debianutils (4.0.3) unstable; urgency=low
+
+  * Remove /usr/bin/esh from shells list (see #328802).
+  * Remove /usr/bin/es from shells list (see #503547).
+  * Remove /usr/bin/rc from shells list; handled by rc postinst/postrm.
+  * Remove /bin/tcsh and /usr/bin/tcsh from shells list; handled by tcsh
+    postinst/postrm.
+  * German man page translation update from Helge Kreutzmann.  closes: #628660.
+
+ -- Clint Adams <clint@debian.org>  Sun, 02 Oct 2011 18:14:14 -0400
+
+debianutils (4.0.2) unstable; urgency=low
+
+  * French man page translation update from Christian Perrier.
+    closes: #630170.
+
+ -- Clint Adams <clint@debian.org>  Sun, 12 Jun 2011 11:44:19 -0400
+
+debianutils (4.0.1) unstable; urgency=low
+
+  * tempfile.1: state in the man page that tempfile is
+    deprecated.  closes: #627564.
+  * ischroot.1: correct root/non-root logic claims.
+    closes: #628465.
+
+ -- Clint Adams <clint@debian.org>  Mon, 30 May 2011 10:54:03 -0400
+
+debianutils (4) unstable; urgency=low
+
+  * ischroot utility by Aurelien Jarno to detect chrootedness.
+    closes: #627205.
+
+ -- Clint Adams <clint@debian.org>  Wed, 18 May 2011 15:04:15 -0400
+
+debianutils (3.4.6) unstable; urgency=low
+
+  * Add Spanish man page translations from Omar
+    Campagne.  closes: #619016.
+  * Updated German man page translations from Helge
+    Kreutzmann.  closes: #626891.
+
+ -- Clint Adams <clint@debian.org>  Tue, 17 May 2011 23:29:42 -0400
+
+debianutils (3.4.5) unstable; urgency=low
+
+  * Vcs-Git update.
+  * add-shell(8): grammar fix from Helge Kreutzmann.  closes: #626409.
+  * German man page translations from Helge Kreutzmann.  closes: #626397.
+  * Bump to Standards-Version 3.9.2.
+
+ -- Clint Adams <clint@debian.org>  Thu, 12 May 2011 22:45:15 -0400
+
+debianutils (3.4.4) unstable; urgency=low
+
+  * French man page translation update from David Prévot.
+    closes: #603908.
+  * Patch from Jari Aalto to reorder tempfile options alphabetically.
+    closes: #600542.
+
+ -- Clint Adams <clint@debian.org>  Thu, 10 Feb 2011 17:24:34 -0500
+
+debianutils (3.4.3) unstable; urgency=low
+
+  * Patch from Ben Hutchings to have installkernel run hook scripts.
+    closes: #607411.
+
+ -- Clint Adams <clint@gnu.org>  Tue, 18 Jan 2011 15:29:35 -0500
+
+debianutils (3.4.2) unstable; urgency=low
+
+  * Add Slovene man page translations from Peter Kragelj.  closes:
+    #598531.
+  * French man page translation update from Christian Perrier.  closes:
+    #597486.
+  * run-parts.8: be more precise about ASCII requirement in naming.
+    closes: #542029.
+
+ -- Clint Adams <clint@gnu.org>  Sun, 14 Nov 2010 10:47:12 -0500
+
+debianutils (3.4.1) unstable; urgency=low
+
+  * po4a/po/fr.po: French man page translation update from
+    Christian Perrier.  closes: #597430.
+  * Bump to Standards-Version 3.9.1.
+
+ -- Clint Adams <schizo@debian.org>  Sun, 19 Sep 2010 12:58:38 -0400
+
 debianutils (3.4) unstable; urgency=low
 
   * Apply patch from Ariel to add strength options for compression and

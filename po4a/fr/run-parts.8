@@ -10,7 +10,7 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH RUN\-PARTS 8 "9 août 2009" "Debian GNU/Linux" 
+.TH RUN\-PARTS 8 "27 Jun 2012" "Debian GNU/Linux" 
 .SH NOM
 run\-parts \- exécute les scripts ou les exécutables d'un répertoire
 .SH SYNOPSIS
@@ -28,8 +28,9 @@ run\-parts \- exécute les scripts ou les exécutables d'un répertoire
 ci\-dessous. Les autres fichiers sont ignorés.
 
 Si ni l'option \fB\-\-lsbsysinit\fP ni l'option \fB\-\-regex\fP n'est utilisée, alors
-les noms ne doivent comporter que des lettres (minuscules ou majuscules),
-des chiffres, des tirets de soulignement («\ underscore\ ») ou des tirets.
+les noms ne doivent comporter que des lettres ASCII (minuscules ou
+majuscules), des chiffres ASCII, des tirets de soulignement («\ underscore\ »)
+ASCII ou des tirets (signes moins) ASCII.
 
 Si l'option \fB\-\-lsbsysinit\fP est utilisée, alors les noms ne doivent pas se
 terminer par «\ .dpkg\-old\ », «\ .dpkg\-dist\ », «\ .dpkg\-new\ » ou «\ .dpkg\-tmp\ »
@@ -41,9 +42,9 @@ et doivent appartenir à un (ou plusieurs) des ensembles de noms suivants\ :
 Si l'option \fB\-\-regex\fP est utilisée, les noms doivent correspondre à
 l'expression rationnelle spécifiée en tant qu'argument à cette option.
 
-Les fichiers sont exécutés dans l'ordre lexicographique de leur nom à moins
-que l'option \fB\-\-reverse\fP ne soit utilisée, auquel cas ils sont exécutés
-dans l'ordre inverse.
+Files are run in the lexical sort order (according to the C/POSIX locale
+character collation rules) of their names unless the \-\-reverse option is
+given, in which case they are run in the opposite order.
 
 .SH OPTIONS
 .TP 

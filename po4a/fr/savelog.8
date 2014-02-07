@@ -4,13 +4,13 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH SAVELOG 8 "30 Jun 2010" "Debian GNU/Linux" 
+.TH SAVELOG 8 "30 juin 2010" "Debian GNU/Linux" 
 .SH NOM
 savelog \- sauvegarde un fichier journal
 .SH SYNOPSIS
-\fBsavelog\fP [\-m mode] [\-u user] [\-g group] [\-t] [\-p] [\-c cycle] [\-l] [\-j]
-[\-J] [\-1\ .\|.\ \-9] [\-C] [\-d] [\-l] [\-r rolldir] [\-n] [\-q] [\-D dateformat]
-file ...
+\fBsavelog\fP [\-m mode] [\-u utilisateur] [\-g groupe] [\-t] [\-p] [\-c cycle] [\-l]
+[\-j] [\-J] [\-1\ .\|.\ \-9] [\-C] [\-d] [\-l] [\-r répertoire_cyclique] [\-n] [\-q]
+[\-D format_de_date] fichier ...
 .SH DESCRIPTION
 Le programme \fBsavelog\fP sauvegarde un fichier journal et, éventuellement,
 compresse les anciennes versions. Les anciennes versions de \fIfichier\fP sont
@@ -90,14 +90,16 @@ conserve le propriétaire, le groupe et les permissions du fichier journal.
 compresse avec bzip2 au lieu de gzip.
 .TP 
 \fB\-J\fP
-compress with xz instead of gzip
+compresse avec xz au lieu de gzip.
 
-For xz no strength option is set, and xz decides on the default based on the
-total amount of physical RAM. Note that xz can use a very large amount of
-memory for the higher compression levels.
+Pour xz, aucune option de compression n'est choisie, xz choisira la valeur
+par défaut en fonction de la quantité disponible de mémoire
+physique. Veuillez noter que xz peut utiliser des quantités importantes de
+mémoire pour les niveaux de compression les plus élevés.
 .TP 
 \fB\-1\ .\|.\ \-9\fP
-compression strength or memory usage (default: 9, except for xz)
+niveau de compression ou utilisation mémoire (valeur par défaut\ :\ 9, sauf
+pour xz)
 .TP 
 \fB\-C\fP
 force la suppression des sauvegardes.

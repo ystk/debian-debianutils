@@ -4,7 +4,7 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH TEMPFILE 1 "1 mai 2009" "Debian GNU/Linux" 
+.TH TEMPFILE 1 "27 Jun 2012" "Debian GNU/Linux" 
 .SH NOM
 tempfile \- crée un fichier temporaire de façon sûre
 .SH SYNOPSIS
@@ -43,18 +43,18 @@ utilisé\ ;
 \fB\-d\fP, \fB\-\-directory\fP \fIREP\fP
 place le fichier dans \fIREP\fP.
 .TP 
-\fB\-p\fP, \fB\-\-prefix\fP \fICHAÎNE\fP
-utilise jusqu'à cinq lettres de \fICHAÎNE\fP pour générer le nom.
-.TP 
-\fB\-s\fP, \fB\-\-suffix\fP \fICHAÎNE\fP
-génère le fichier en utilisant \fICHAÎNE\fP comme suffixe.
-.TP 
 \fB\-m\fP, \fB\-\-mode\fP \fIMODE\fP
 ouvre le fichier dans le mode \fIMODE\fP plutôt que 0600.
 .TP 
 \fB\-n\fP, \fB\-\-name\fP \fIFICHIER\fP
 utilise \fIFICHIER\fP comme nom plutôt que \fBtempnam\fP(3). Les options \fB\-d\fP
 \fB\-p\fP et \fB\-s\fP sont ignorées si cette option est utilisée.
+.TP 
+\fB\-p\fP, \fB\-\-prefix\fP \fICHAÎNE\fP
+utilise jusqu'à cinq lettres de \fICHAÎNE\fP pour générer le nom.
+.TP 
+\fB\-s\fP, \fB\-\-suffix\fP \fICHAÎNE\fP
+génère le fichier en utilisant \fICHAÎNE\fP comme suffixe.
 .TP 
 \fB\-\-help\fP
 affiche un message d'aide sur la sortie standard, puis quitte sans erreur.
@@ -65,9 +65,9 @@ affiche les informations sur la version, puis quitte sans erreur.
 Une valeur de retour 0 signifie que le fichier a été créé avec succès. Toute
 autre valeur de retour indique une erreur.
 .SH BOGUES
-Une création exclusive ([\ NdT\ : pour éviter toute situation de compétition,
-ou «\ race condition\ »\ ]) n'est pas garantie lorsque le fichier est créé sur
-une partition NFS.
+Exclusive creation is not guaranteed when creating files on NFS partitions.
+tempfile cannot make temporary directories.  tempfile is deprecated; you
+should use mktemp(1) instead.
 .SH EXEMPLES
 
 .RS
