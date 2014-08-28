@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debianutils\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2012-06-27 21:51-0300\n"
-"PO-Revision-Date: 2010-09-29 07:21+0000\n"
-"Last-Translator: Andrej Znidarsic <andrej.znidarsic@gmail.com>\n"
+"POT-Creation-Date: 2012-07-28 21:48-0400\n"
+"PO-Revision-Date: 2012-07-29 11:31+0100\n"
+"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -26,10 +26,9 @@ msgstr "ADD-SHELL"
 
 #. type: TH
 #: ../add-shell.8:1
-#, fuzzy, no-wrap
-#| msgid "1 May 2009"
+#, no-wrap
 msgid "12 May 2011"
-msgstr "1 maj 2009"
+msgstr "12. maj 2011"
 
 #. type: SH
 #: ../add-shell.8:2 ../installkernel.8:2 ../ischroot.1:3 ../remove-shell.8:2
@@ -161,14 +160,13 @@ msgstr ""
 #: ../ischroot.1:2
 #, no-wrap
 msgid "ISCHROOT"
-msgstr ""
+msgstr "ISCHROOT"
 
 #. type: TH
 #: ../ischroot.1:2
-#, fuzzy, no-wrap
-#| msgid "1 May 2009"
+#, no-wrap
 msgid "30 May 2011"
-msgstr "1 maj 2009"
+msgstr "30. maj 2011"
 
 #. type: TH
 #: ../ischroot.1:2 ../run-parts.8:8 ../savelog.8:2 ../tempfile.1:2
@@ -180,49 +178,47 @@ msgstr "Debian"
 #. type: Plain text
 #: ../ischroot.1:5
 msgid "ischroot - detect if running in a chroot"
-msgstr ""
+msgstr "ischroot - zazna, če se izvaja v chroot"
 
 #. type: Plain text
 #: ../ischroot.1:8
 msgid "B<ischroot> [--default-false] [--default-true] [--help] [--version]"
-msgstr ""
+msgstr "B<ischroot> [--default-false] [--default-true] [--help] [--version]"
 
 #. type: Plain text
 #: ../ischroot.1:12
 msgid ""
 "B<ischroot> detects if it is currently running in a chroot. The exit status "
 "is:"
-msgstr ""
+msgstr "B<ischroot> zazna, le se trenutno izvaja v chroot. Stanje končanja je:"
 
 #. type: TP
 #: ../ischroot.1:12
 #, no-wrap
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: Plain text
 #: ../ischroot.1:15
 msgid "if currently running in a chroot"
-msgstr ""
+msgstr "Če se ne izvaja v chroot"
 
 #. type: TP
 #: ../ischroot.1:15
-#, fuzzy, no-wrap
-#| msgid "1)"
+#, no-wrap
 msgid "1"
-msgstr "1)"
+msgstr "1"
 
 #. type: Plain text
 #: ../ischroot.1:18
 msgid "if currently not running in a chroot"
-msgstr ""
+msgstr "Če se ne izvaja v chroot"
 
 #. type: TP
 #: ../ischroot.1:18
-#, fuzzy, no-wrap
-#| msgid "2)"
+#, no-wrap
 msgid "2"
-msgstr "2)"
+msgstr "2"
 
 #. type: Plain text
 #: ../ischroot.1:22
@@ -230,6 +226,8 @@ msgid ""
 "if the detection is not possible (On GNU/Linux this happens if the script is "
 "not run as root)."
 msgstr ""
+"če zaznava ni mogoča (na GNU/Linux se to zgodi, če skript ni zagnan kot "
+"skrbnik.)"
 
 #. type: SH
 #: ../ischroot.1:22 ../run-parts.8:47 ../savelog.8:92 ../tempfile.1:46
@@ -242,23 +240,23 @@ msgstr "MOŽNOSTI"
 #: ../ischroot.1:23
 #, no-wrap
 msgid "B<-f, --default-false >"
-msgstr ""
+msgstr "B<-f, --default-false >"
 
 #. type: Plain text
 #: ../ischroot.1:26
 msgid "Exit with status 1 if the detection is not possible."
-msgstr ""
+msgstr "Končaj s stanjem 1, če zaznava ni mogoča."
 
 #. type: TP
 #: ../ischroot.1:26
 #, no-wrap
 msgid "B<-t, --default-true >"
-msgstr ""
+msgstr "B<-t, --default-true >"
 
 #. type: Plain text
 #: ../ischroot.1:29
 msgid "Exit with status 0 if the detection is not possible."
-msgstr ""
+msgstr "Končaj s stanjem 0, če zaznava ni mogoča."
 
 #. type: TP
 #: ../ischroot.1:29 ../tempfile.1:64
@@ -288,6 +286,8 @@ msgid ""
 "On GNU/Linux, chroot detection is not possible when not root. This works "
 "correctly on GNU/Hurd and GNU/kFreeBSD."
 msgstr ""
+"Na GNU/Linux zaznavanje chroot ni mogoče, če niste skrbnik. To deluje "
+"pravilno na GNU/Hura in GNU/kFreeBSD."
 
 #. type: TH
 #: ../remove-shell.8:1
@@ -330,10 +330,9 @@ msgstr "RUN-PARTS"
 
 #. type: TH
 #: ../run-parts.8:8 ../tempfile.1:2
-#, fuzzy, no-wrap
-#| msgid "7 Jan 2001"
+#, no-wrap
 msgid "27 Jun 2012"
-msgstr "7 jan 2001"
+msgstr "27. jun 2012"
 
 #. type: Plain text
 #: ../run-parts.8:11
@@ -369,19 +368,14 @@ msgstr ""
 
 #. type: Plain text
 #: ../run-parts.8:31
-#, fuzzy
-#| msgid ""
-#| "If neither the --lsbsysinit option nor the --regex option is given then "
-#| "the names must consist entirely of upper and lower case letters, digits, "
-#| "underscores, and hyphens."
 msgid ""
 "If neither the --lsbsysinit option nor the --regex option is given then the "
 "names must consist entirely of ASCII upper- and lower-case letters, ASCII "
 "digits, ASCII underscores, and ASCII minus-hyphens."
 msgstr ""
 "Če nista podani možnost --lsbsysinit ali pa možnost --regex, morajo biti "
-"imena sestavljena samo iz velikih in majhnih črk, številk, podčrtajev in "
-"vezajev."
+"imena sestavljena samo iz ASCII velikih in majhnih črk, številk, podčrtajev "
+"in vezajev."
 
 #. type: Plain text
 #: ../run-parts.8:38
@@ -409,17 +403,14 @@ msgstr ""
 
 #. type: Plain text
 #: ../run-parts.8:46
-#, fuzzy
-#| msgid ""
-#| "Files are run in the lexical sort order of their names unless the --"
-#| "reverse option is given, in which case they are run in the opposite order."
 msgid ""
 "Files are run in the lexical sort order (according to the C/POSIX locale "
 "character collation rules) of their names unless the --reverse option is "
 "given, in which case they are run in the opposite order."
 msgstr ""
-"Datoteke se zaganjajo po abecednem vrstnem redu njihovih imen, razen če je "
-"podana možnost --reverse. Takrat se zaganjajo v obratnem vrstnem redu."
+"Datoteke se zaganjajo po abecednem vrstnem redu njihovih imen (glede na "
+"pravila krajevnih oznak C/POSIX), razen če je podana možnost --reverse. "
+"Takrat se zaganjajo v obratnem vrstnem redu."
 
 #. type: TP
 #: ../run-parts.8:48
@@ -673,10 +664,9 @@ msgstr "SAVELOG"
 
 #. type: TH
 #: ../savelog.8:2
-#, fuzzy, no-wrap
-#| msgid "7 Jan 2001"
+#, no-wrap
 msgid "30 Jun 2010"
-msgstr "7 jan 2001"
+msgstr "30. jun 2010"
 
 #. type: Plain text
 #: ../savelog.8:5
@@ -685,10 +675,6 @@ msgstr "savelog - shrani datoteko dnevnika"
 
 #. type: Plain text
 #: ../savelog.8:9
-#, fuzzy
-#| msgid ""
-#| "B<savelog> [-m mode] [-u user] [-g group] [-t] [-p] [-c cycle] [-l] [-j] "
-#| "[-C] [-d] [-l] [-r rolldir] [-n] [-q] [-D dateformat] file ..."
 msgid ""
 "B<savelog> [-m mode] [-u user] [-g group] [-t] [-p] [-c cycle] [-l] [-j] [-"
 "J] [-1\\ .\\|.\\ -9] [-C] [-d] [-l] [-r rolldir] [-n] [-q] [-D dateformat] "
@@ -912,14 +898,12 @@ msgstr "stisni z bzip2 namesto z gzip"
 #: ../savelog.8:122
 #, no-wrap
 msgid "B<-J>"
-msgstr ""
+msgstr "B<-J>"
 
 #. type: Plain text
 #: ../savelog.8:125
-#, fuzzy
-#| msgid "compress with bzip2 instead of gzip"
 msgid "compress with xz instead of gzip"
-msgstr "stisni z bzip2 namesto z gzip"
+msgstr "stisni z xz2 namesto z gzip"
 
 #. type: Plain text
 #: ../savelog.8:127
@@ -928,17 +912,20 @@ msgid ""
 "total amount of physical RAM. Note that xz can use a very large amount of "
 "memory for the higher compression levels."
 msgstr ""
+"Za xz možnost moči ni nastavljena. Privzeta možnost bo določena na osnovi "
+"celotne količine fizičnega RAM-a. Za višje ravni stiskanje lahko xz porabi "
+"zelo veliko količino pomnilnika."
 
 #. type: TP
 #: ../savelog.8:127
 #, no-wrap
 msgid "B<-1\\ .\\|.\\ -9>"
-msgstr ""
+msgstr "B<-1\\ .\\|.\\ -9>"
 
 #. type: Plain text
 #: ../savelog.8:130
 msgid "compression strength or memory usage (default: 9, except for xz)"
-msgstr ""
+msgstr "moč stiskanja ali poraba pomnilnika (privzeto: 9, razen za xz)"
 
 #. type: TP
 #: ../savelog.8:130
@@ -1018,7 +1005,7 @@ msgstr ""
 #. type: Plain text
 #: ../savelog.8:159
 msgid "B<logrotate>(8)"
-msgstr ""
+msgstr "B<logrotate>(8)"
 
 #. type: TH
 #: ../tempfile.1:2
@@ -1194,17 +1181,14 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:77
-#, fuzzy
-#| msgid ""
-#| "Exclusive creation is not guaranteed when creating files on NFS "
-#| "partitions."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile cannot make temporary directories.  tempfile is deprecated; you "
 "should use mktemp(1) instead."
 msgstr ""
-"Izključno ustvarjanje ni zagotovljeno, ko ustvarjate datoteke na razdelkih "
-"NFS."
+"Izključno ustvarjanje ni zagotovljeno ob ustvarjanju datotek na razdelkih "
+"NFS. začasna datoteka ne more ustvariti začasnih map. začasna datoteka je "
+"zastarela, namesto nje uporabite mktemp(1)."
 
 #. type: SH
 #: ../tempfile.1:77

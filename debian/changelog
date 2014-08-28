@@ -1,3 +1,41 @@
+debianutils (4.4) unstable; urgency=low
+
+  [ Robert Luberda ]
+  * Initial translation of manual pages into Polish.  closes: #709945.
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 3.9.4.
+  * savelog: patch from Bob Proulx to silence ls error message with
+    savelog -C.  closes: #653940.
+  * Patch from Robert Collins to fix compiler warnings.  closes: #699315.
+  * add-shell: use awk to replace the final newline in /etc/shells
+    even if the admin has removed it for some reason.  closes: #698874.
+  * Add Italian man pages from Beatrice Torracca.  closes: #708753.
+
+ -- Clint Adams <clint@debian.org>  Sat, 27 Jul 2013 21:19:15 -0400
+
+debianutils (4.3.4) unstable; urgency=low
+
+  [ David Prévot ]
+  * French man page translation proofread by Stéphane Blondon.
+    closes: #684074.
+
+  [ Clint Adams ]
+  * Slovenian man page translation update from Andrej Žnidarši.
+  * Patch from KURASAWA Nozomu to fix Japanese man page build.
+    closes: #683405.
+  * Updated Spanish man page from Omar Campagne.  closes: #684132.
+
+ -- Clint Adams <clint@debian.org>  Sun, 16 Sep 2012 18:56:57 -0400
+
+debianutils (4.3.3) unstable; urgency=low
+
+  * Japanese man page translations from KURASAWA Nozomu.  closes: #682721.
+  * French man page translation update from David Prévot.  closes: #683122.
+  * German man page translation update from Helge Kreutzmann.  closes: #682449.
+
+ -- Clint Adams <clint@debian.org>  Sat, 28 Jul 2012 21:32:11 -0400
+
 debianutils (4.3.2) unstable; urgency=low
 
   * Fix list of utilities in long description.  closes: #666077.

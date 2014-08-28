@@ -255,6 +255,16 @@ void run_part(char *progname)
         exit(1);
       }
       else if (r > 0) {
+	/* If STDOUT or STDERR get closed / full, we still run to completion
+	 * (and just ignore that we can't output process output any more).
+	 * Perhaps we should instead kill the child process we are running
+	 * if that happens.
+	 * For now partial writes are not retried to complete - that can
+	 * and should be done, but needs care to ensure that we don't hang
+	 * if the fd doesn't accept more data ever - or we need to decide that
+	 * waiting is the appropriate thing to do.
+	 */
+	int ignored;
 	if (pout[0] >= 0 && FD_ISSET(pout[0], &set)) {
 	  c = read(pout[0], buf, sizeof(buf));
 	  if (c > 0) {
@@ -263,7 +273,7 @@ void run_part(char *progname)
 	      fflush(stdout);
 	      printflag = 1;
 	    }
-	    write(STDOUT_FILENO, buf, c);
+	    ignored = write(STDOUT_FILENO, buf, c);
 	  }
 	  else if (c == 0) {
 	    close(pout[0]);
@@ -283,7 +293,7 @@ void run_part(char *progname)
 	      fflush(stderr);
 	      printflag = 1;
 	    }
-	    write(STDERR_FILENO, buf, c);
+	    ignored = write(STDERR_FILENO, buf, c);
 	  }
 	  else if (c == 0) {
 	    close(perr[0]);

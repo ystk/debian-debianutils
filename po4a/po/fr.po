@@ -10,11 +10,12 @@
 # Nicolas FRANÇOIS <nicolas.francois@centaliens.net>, 2004.
 # et savelog.8 (Antoine Gémis, 13 janvier 2003).
 # Christian Perrier <bubulle@debian.org>, 2010, 2011.
+# David Prévot <taffit@debian.org>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: debianutils\n"
 "POT-Creation-Date: 2012-06-27 21:51-0300\n"
-"PO-Revision-Date: 2011-06-08 19:13+0200\n"
+"PO-Revision-Date: 2012-07-28 18:33:19-0400\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
@@ -51,7 +52,7 @@ msgstr "NOM"
 #: ../add-shell.8:4
 msgid "add-shell - add shells to the list of valid login shells"
 msgstr ""
-"add-shell - ajoute des interpréteurs à la liste des interpréteurs initiaux "
+"add-shell - Ajouter des interpréteurs à la liste des interpréteurs initiaux "
 "valables"
 
 # type: SH
@@ -132,7 +133,7 @@ msgstr "Debian GNU/Linux"
 #. type: Plain text
 #: ../installkernel.8:4
 msgid "installkernel - install a new kernel image"
-msgstr "installkernel - installe une nouvelle image de noyau"
+msgstr "installkernel - Installer une nouvelle image de noyau"
 
 # type: Plain text
 #. type: Plain text
@@ -149,7 +150,7 @@ msgid ""
 "install> is invoked there."
 msgstr ""
 "B<installkernel> installe une nouvelle image de noyau depuis une "
-"arborescence source de Linux. Cette commande est appelée par les makefiles "
+"arborescence source de Linux. Cette commande est appelée par les Makefiles "
 "du noyau Linux lors de l'invocation de B<make install>."
 
 # type: Plain text
@@ -211,7 +212,7 @@ msgstr "Debian GNU/Linux"
 #: ../ischroot.1:5
 msgid "ischroot - detect if running in a chroot"
 msgstr ""
-"ischroot - détection de l'utilisation d'un environnement fermé (« chroot »)"
+"ischroot - Détection de l'utilisation d'un environnement fermé (« chroot »)"
 
 #. type: Plain text
 #: ../ischroot.1:8
@@ -354,7 +355,7 @@ msgstr "7 avril 2005"
 #: ../remove-shell.8:4
 msgid "remove-shell - remove shells from the list of valid login shells"
 msgstr ""
-"remove-shell - supprime des interpréteurs de la liste des interpréteurs "
+"remove-shell - Supprimer des interpréteurs de la liste des interpréteurs "
 "initiaux valables"
 
 # type: Plain text
@@ -386,16 +387,14 @@ msgstr "RUN-PARTS"
 # type: TH
 #. type: TH
 #: ../run-parts.8:8 ../tempfile.1:2
-#, fuzzy, no-wrap
-#| msgid "7 Jan 2001"
 msgid "27 Jun 2012"
-msgstr "7 janvier 2001"
+msgstr "27 juin 2012"
 
 # type: Plain text
 #. type: Plain text
 #: ../run-parts.8:11
 msgid "run-parts - run scripts or programs in a directory"
-msgstr "run-parts - exécute les scripts ou les exécutables d'un répertoire"
+msgstr "run-parts - Exécuter les scripts ou les exécutables d'un répertoire"
 
 # NOTE : DIRECTORY, + font modifiers
 # type: Plain text
@@ -472,18 +471,15 @@ msgstr ""
 # type: Plain text
 #. type: Plain text
 #: ../run-parts.8:46
-#, fuzzy
-#| msgid ""
-#| "Files are run in the lexical sort order of their names unless the --"
-#| "reverse option is given, in which case they are run in the opposite order."
 msgid ""
 "Files are run in the lexical sort order (according to the C/POSIX locale "
 "character collation rules) of their names unless the --reverse option is "
 "given, in which case they are run in the opposite order."
 msgstr ""
-"Les fichiers sont exécutés dans l'ordre lexicographique de leur nom à moins "
-"que l'option B<--reverse> ne soit utilisée, auquel cas ils sont exécutés "
-"dans l'ordre inverse."
+"Les fichiers sont exécutés dans l'ordre lexicographique de leur nom (d'après "
+"les règles de classement de caractères des paramètres linguistiques "
+"régionaux (« locale ») C/POSIX) à moins que l'option B<--reverse> ne soit "
+"utilisée, auquel cas ils sont exécutés dans l'ordre inverse."
 
 # type: TP
 #. type: TP
@@ -788,7 +784,7 @@ msgstr "30 juin 2010"
 #. type: Plain text
 #: ../savelog.8:5
 msgid "savelog - save a log file"
-msgstr "savelog - sauvegarde un fichier journal"
+msgstr "savelog - Sauvegarder un fichier journal"
 
 # NOTE : -l en double
 # type: Plain text
@@ -1205,7 +1201,7 @@ msgstr "TEMPFILE"
 #. type: Plain text
 #: ../tempfile.1:5
 msgid "tempfile - create a temporary file in a safe manner"
-msgstr "tempfile - crée un fichier temporaire de façon sûre"
+msgstr "tempfile - Créer un fichier temporaire de façon sûre"
 
 # type: Plain text
 #. type: Plain text
@@ -1396,10 +1392,6 @@ msgstr ""
 # type: Plain text
 #. type: Plain text
 #: ../tempfile.1:77
-#, fuzzy
-#| msgid ""
-#| "Exclusive creation is not guaranteed when creating files on NFS "
-#| "partitions.  tempfile is deprecated; you should use mktemp(1)  instead."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile cannot make temporary directories.  tempfile is deprecated; you "
@@ -1407,8 +1399,9 @@ msgid ""
 msgstr ""
 "Une création exclusive ([ NdT : pour éviter toute situation de compétition, "
 "ou « race condition » ]) n'est pas garantie lorsque le fichier est créé sur "
-"une partition NFS. Le programme tempfile est obsolète. Il est conseillé "
-"d'utiliser mktemp(1) à la place."
+"une partition NFS. tempfile ne peut pas faire de répertoire temporaire. Le "
+"programme tempfile est obsolète. Il est conseillé d'utiliser mktemp(1) à la "
+"place."
 
 # type: SH
 #. type: SH
@@ -1464,7 +1457,7 @@ msgstr "1 mai 2009"
 #. type: Plain text
 #: ../which.1:5
 msgid "which - locate a command"
-msgstr "which - localise une commande"
+msgstr "which - Localiser une commande"
 
 # type: Plain text
 #. type: Plain text

@@ -10,7 +10,7 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH RUN\-PARTS 8 "27 Jun 2012" Debian 
+.TH RUN\-PARTS 8 "27. jun 2012" Debian 
 .SH IME
 run\-parts \- zažene skripte ali programe v mapi
 .SH POVZETEK
@@ -26,9 +26,9 @@ run\-parts \- zažene skripte ali programe v mapi
 poimenovane s spodaj opisanimi omejitvami. Druge datoteke in mape so tiho
 prezrte.
 
-If neither the \-\-lsbsysinit option nor the \-\-regex option is given then the
-names must consist entirely of ASCII upper\- and lower\-case letters, ASCII
-digits, ASCII underscores, and ASCII minus\-hyphens.
+Če nista podani možnost \-\-lsbsysinit ali pa možnost \-\-regex, morajo biti
+imena sestavljena samo iz ASCII velikih in majhnih črk, številk, podčrtajev
+in vezajev.
 
 Če je podana možnost \-\-lsbsysinit, se imena ne smejo končati z .dpkg\-old,
 \&.dpkg\-dist, .dpkg\-new ali .dpkg\-tmp. Pripadati morajo enemu izmed naslednjih
@@ -39,9 +39,9 @@ in imenski prostor Debian cron skript (^[a\-zA\-Z0\-9_\-]+$).
 Če je podana možnost \-\-regex, morajo imena ustrezati po meri narejenemu
 razširjenemu logičnemu izrazu določenemu kot argument te možnosti.
 
-Files are run in the lexical sort order (according to the C/POSIX locale
-character collation rules) of their names unless the \-\-reverse option is
-given, in which case they are run in the opposite order.
+Datoteke se zaganjajo po abecednem vrstnem redu njihovih imen (glede na
+pravila krajevnih oznak C/POSIX), razen če je podana možnost
+\-\-reverse. Takrat se zaganjajo v obratnem vrstnem redu.
 
 .SH MOŽNOSTI
 .TP 

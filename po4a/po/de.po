@@ -1,12 +1,12 @@
 # Translation of debianutils man page template to German
-# Copyright (C) Helge Kreutzmann <debian@helgefjell.de>, 2011.
+# Copyright (C) Helge Kreutzmann <debian@helgefjell.de>, 2011, 2012.
 # This file is distributed under the same license as the debianutils package.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debianutils man page\n"
 "POT-Creation-Date: 2012-06-27 21:51-0300\n"
-"PO-Revision-Date: 2011-05-31 09:18+0200\n"
+"PO-Revision-Date: 2012-07-22 22:28+0200\n"
 "Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
 "Language-Team: de <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -337,10 +337,9 @@ msgstr "RUN-PARTS"
 
 #. type: TH
 #: ../run-parts.8:8 ../tempfile.1:2
-#, fuzzy, no-wrap
-#| msgid "7 Jan 2001"
+#, no-wrap
 msgid "27 Jun 2012"
-msgstr "7. Jan. 2001"
+msgstr "27. Jun. 2012"
 
 #. type: Plain text
 #: ../run-parts.8:11
@@ -413,16 +412,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../run-parts.8:46
-#, fuzzy
-#| msgid ""
-#| "Files are run in the lexical sort order of their names unless the --"
-#| "reverse option is given, in which case they are run in the opposite order."
 msgid ""
 "Files are run in the lexical sort order (according to the C/POSIX locale "
 "character collation rules) of their names unless the --reverse option is "
 "given, in which case they are run in the opposite order."
 msgstr ""
-"Dateien werden in der lexikalisch sortierten Reihenfolge ihrer Namen "
+"Dateien werden in der lexikalisch sortierten Reihenfolge (gemäß den C/POSIX-Locale-Sortierregeln) ihrer Namen "
 "ausgeführt, es sei denn, die Option »--reverse« ist angegeben, in diesem "
 "Fall werden sie in der umgekehrten Reihenfolge ausgeführt."
 
@@ -1217,17 +1212,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:77
-#, fuzzy
-#| msgid ""
-#| "Exclusive creation is not guaranteed when creating files on NFS "
-#| "partitions.  tempfile is deprecated; you should use mktemp(1)  instead."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile cannot make temporary directories.  tempfile is deprecated; you "
 "should use mktemp(1) instead."
 msgstr ""
 "Exklusive Erstellung wird bei Dateien auf NFS-Partitionen nicht garantiert. "
-"Tempfile ist veraltet, sie sollten stattdessen mktemp(1) verwenden."
+"Tempfile kann keine temporären Verzeichnisse erstellen. Tempfile ist veraltet, sie sollten stattdessen mktemp(1) verwenden."
 
 #. type: SH
 #: ../tempfile.1:77

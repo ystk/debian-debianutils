@@ -4,9 +4,9 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH TEMPFILE 1 "27 Jun 2012" "Debian GNU/Linux" 
+.TH TEMPFILE 1 "27 juin 2012" "Debian GNU/Linux" 
 .SH NOM
-tempfile \- crée un fichier temporaire de façon sûre
+tempfile \- Créer un fichier temporaire de façon sûre
 .SH SYNOPSIS
 \fBtempfile\fP [\fB\-d\fP \fIREP\fP] [\fB\-p\fP \fICHAÎNE\fP] [\fB\-s\fP \fICHAÎNE\fP] [\fB\-m\fP
 \fIMODE\fP] [\fB\-n\fP \fIFICHIER\fP] [\fB\-\-directory\fP=\fIREP\fP] [\fB\-\-prefix\fP=\fICHAÎNE\fP]
@@ -65,9 +65,11 @@ affiche les informations sur la version, puis quitte sans erreur.
 Une valeur de retour 0 signifie que le fichier a été créé avec succès. Toute
 autre valeur de retour indique une erreur.
 .SH BOGUES
-Exclusive creation is not guaranteed when creating files on NFS partitions.
-tempfile cannot make temporary directories.  tempfile is deprecated; you
-should use mktemp(1) instead.
+Une création exclusive ([\ NdT\ : pour éviter toute situation de compétition,
+ou «\ race condition\ »\ ]) n'est pas garantie lorsque le fichier est créé sur
+une partition NFS. tempfile ne peut pas faire de répertoire temporaire. Le
+programme tempfile est obsolète. Il est conseillé d'utiliser mktemp(1) à la
+place.
 .SH EXEMPLES
 
 .RS

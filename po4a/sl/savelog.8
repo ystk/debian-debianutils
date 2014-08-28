@@ -4,13 +4,12 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH SAVELOG 8 "30 Jun 2010" Debian 
+.TH SAVELOG 8 "30. jun 2010" Debian 
 .SH IME
 savelog \- shrani datoteko dnevnika
 .SH POVZETEK
-\fBsavelog\fP [\-m mode] [\-u user] [\-g group] [\-t] [\-p] [\-c cycle] [\-l] [\-j]
-[\-J] [\-1\ .\|.\ \-9] [\-C] [\-d] [\-l] [\-r rolldir] [\-n] [\-q] [\-D dateformat]
-file ...
+\fBsavelog\fP [\-m način] [\-u uporabnik] [\-g skupina] [\-t] [\-p] [\-c cikel] [\-l]
+[\-j] [\-C] [\-d] [\-l] [\-r rolldir] [\-n] [\-q] [\-D oblikadatuma] datoteka ...
 .SH OPIS
 Ukaz \fBsavelog\fP shrani in po želji stisne stare kopije datotek. Starejše
 različice \fIfile\fP se imenujejo:
@@ -80,14 +79,14 @@ ohrani lastništvo, skupino in dovojenja datoteke dnevnika
 stisni z bzip2 namesto z gzip
 .TP 
 \fB\-J\fP
-compress with xz instead of gzip
+stisni z xz2 namesto z gzip
 
-For xz no strength option is set, and xz decides on the default based on the
-total amount of physical RAM. Note that xz can use a very large amount of
-memory for the higher compression levels.
+Za xz možnost moči ni nastavljena. Privzeta možnost bo določena na osnovi
+celotne količine fizičnega RAM\-a. Za višje ravni stiskanje lahko xz porabi
+zelo veliko količino pomnilnika.
 .TP 
 \fB\-1\ .\|.\ \-9\fP
-compression strength or memory usage (default: 9, except for xz)
+moč stiskanja ali poraba pomnilnika (privzeto: 9, razen za xz)
 .TP 
 \fB\-C\fP
 prisili čiščenje krožnih datotek dnevnikov

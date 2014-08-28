@@ -29,12 +29,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debianutils 4.3\n"
+"Project-Id-Version: debianutils 4.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 21:51-0300\n"
-"PO-Revision-Date: 2012-05-10 18:33+0200\n"
+"POT-Creation-Date: 2012-07-28 21:29-0400\n"
+"PO-Revision-Date: 2012-08-07 11:43+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Debian l10n <debian-l10n-spanish@lists.debian.org>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,7 +162,7 @@ msgid ""
 "previously installed kernel is available as I<{directory}/vmlinuz.old>."
 msgstr ""
 "El núcleo nuevo se instala en I<{directorio}/vmlinuz-{versión}>. Si ya "
-"existe un enlace simbólico  I<{directorio}/vmlinuz>, este se actualiza, "
+"existe un enlace simbólico I<{directorio}/vmlinuz>, este se actualiza, "
 "creando un enlace desde el I<{directory}/vmlinuz> al núcleo nuevo. El núcleo "
 "anteriormente instalado seguirá disponible como I<{directorio}/vmlinuz.old>. "
 
@@ -362,10 +362,9 @@ msgstr "RUN-PARTS"
 
 #. type: TH
 #: ../run-parts.8:8 ../tempfile.1:2
-#, fuzzy, no-wrap
-#| msgid "7 Jan 2001"
+#, no-wrap
 msgid "27 Jun 2012"
-msgstr "7 de enero de 2001"
+msgstr "27 de junio de 2012"
 
 #. type: Plain text
 #: ../run-parts.8:11
@@ -437,16 +436,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../run-parts.8:46
-#, fuzzy
-#| msgid ""
-#| "Files are run in the lexical sort order of their names unless the --"
-#| "reverse option is given, in which case they are run in the opposite order."
 msgid ""
 "Files are run in the lexical sort order (according to the C/POSIX locale "
 "character collation rules) of their names unless the --reverse option is "
 "given, in which case they are run in the opposite order."
 msgstr ""
-"Los ficheros se ejecutan en orden alfabético, a menos que se introduzca la "
+"Los ficheros se ejecutan en orden alfabético (de acuerdo a las reglas de "
+"ordenación de caracteres de locale C/POSIX) a menos que se introduzca la "
 "opción «--reverse», en cuyo caso se ejecutan en orden inverso."
 
 #. type: TP
@@ -755,7 +751,7 @@ msgid ""
 "for I/O.  Only I<cycle> versions of the file are kept."
 msgstr ""
 "I<E<lt>númeroE<gt>> representa el número de versión, siendo cero el más "
-"reciente. Los números de versión  E<gt> 0 se comprimen, a menos que B<-l> lo "
+"reciente. Los números de versión E<gt> 0 se comprimen, a menos que B<-l> lo "
 "impida. El número de versión cero no se comprime, ya que puede que un "
 "proceso mantenga el I<fichero> abierto para la E/S. Sólo se preservan las "
 "versiones I<ciclo> del fichero."
@@ -1240,17 +1236,14 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:77
-#, fuzzy
-#| msgid ""
-#| "Exclusive creation is not guaranteed when creating files on NFS "
-#| "partitions.  tempfile is deprecated; you should use mktemp(1)  instead."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile cannot make temporary directories.  tempfile is deprecated; you "
 "should use mktemp(1) instead."
 msgstr ""
 "No se garantiza la creación exclusiva al crear ficheros en particiones NFS. "
-"tempfile está obsoleto, debe utilizar mktemp(1) en su lugar."
+"tempfile no puede crear directorios temporales. tempfile está obsoleto, debe "
+"utilizar mktemp(1) en su lugar."
 
 #. type: SH
 #: ../tempfile.1:77
@@ -1373,14 +1366,3 @@ msgstr "B<2>"
 msgid "if an invalid option is specified"
 msgstr "La opción definida no es válida."
 
-#~ msgid "14 Nov 2010"
-#~ msgstr "14 de noviembre de 2010"
-
-#~ msgid ""
-#~ "B<add-shell> copy I</etc/shells> to I</etc/shells.tmp>, add the given "
-#~ "shells to this file if they are not already present, and copy this "
-#~ "temporary file back to I</etc/shells>."
-#~ msgstr ""
-#~ "B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las "
-#~ "consolas a este fichero si no están presentes, y copia este fichero "
-#~ "temporal  a I</etc/shells>."

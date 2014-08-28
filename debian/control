@@ -3,7 +3,7 @@ Section: utils
 Priority: required
 Maintainer: Clint Adams <clint@debian.org>
 Uploaders: Manoj Srivastava <srivasta@debian.org>
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Vcs-Git: git://git.debian.org/users/clint/debianutils.git
 Vcs-Browser: http://git.debian.org/?p=users/clint/debianutils.git
 
@@ -11,6 +11,7 @@ Package: debianutils
 Architecture: any
 Pre-Depends: ${shlibs:Depends}
 Depends: sensible-utils
+Replaces: manpages-pl (<< 1:0.5)
 Section: utils
 Essential: yes
 Multi-Arch: foreign
